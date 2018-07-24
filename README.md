@@ -1,2 +1,0 @@
-# DragRaceWithRedux
-Created with CodeSandbox
