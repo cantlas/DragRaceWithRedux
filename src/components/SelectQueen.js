@@ -5,7 +5,6 @@ import Queen from "./Queen";
 
 let SelectQueen = ({ team, selectQueen, history }) => (
   <div>
-    <Queen />
     <ul>
       {team.map(queen => (
         <li onClick={() => selectQueen(queen.name, history)}>{queen.name}</li>
