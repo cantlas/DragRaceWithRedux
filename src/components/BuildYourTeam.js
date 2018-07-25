@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { updateTeam } from "../actions";
 
 class BuildYourTeam extends React.Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class BuildYourTeam extends React.Component {
   }
   continue() {
     console.log("continue");
-    this.props.history.push("/SelectQueen");
+    this.props.updateTeam(this.state.team);
+    this.props.history.push("/CategoryIs");
   }
   addQueen(event) {
     let selected_queen = this.state.queens.filter(
@@ -99,7 +101,18 @@ const mapStateToProps = state => {
   };
 };
 
-BuildYourTeam = connect(mapStateToProps)(BuildYourTeam);
+const mapDispatchToProps = dispatch => {
+  return {
+    updateTeam: team => {
+      dispatch(updateTeam(team));
+    }
+  };
+};
+
+BuildYourTeam = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BuildYourTeam);
 
 console.log(BuildYourTeam);
 

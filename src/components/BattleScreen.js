@@ -1,8 +1,20 @@
 import React from "react";
 import { connect } from "react-redux";
+import BattleResults from "./BattleResults";
 
-const randomiseQueen = queens => {
-  return queens[Math.floor(Math.random() * queens.length)];
+const randomiseQueen = (competitors, all_queens) => {
+  let random_competitor =
+    competitors[Math.floor(Math.random() * competitors.length)];
+  random_competitor = all_queens.filter(
+    queen => queen.name == random_competitor
+  );
+  random_competitor = random_competitor[0];
+  return random_competitor;
+};
+
+const setChallenger = (all_queens, selected_queen) => {
+  let challenger = all_queens.filter(queen => queen.name == selected_queen);
+  return challenger[0];
 };
 
 class BattleScreen extends React.Component {
@@ -10,19 +22,27 @@ class BattleScreen extends React.Component {
     super();
   }
   render() {
-    console.log(this.props.random_queen);
     return (
-      <h1>
-        {this.props.selected_queen} <i>versus</i> {this.props.random_queen.name}
-      </h1>
+      <div>
+        <h1>
+          {this.props.challenger.name} <i>versus</i>{" "}
+          {this.props.competitor.name}
+        </h1>
+        <BattleResults
+          challenger={this.props.challenger}
+          competitor={this.props.competitor}
+          challenge={this.props.challenge}
+        />
+      </div>
     );
   }
 }
 
 const mapStateToProps = state => {
   return {
-    selected_queen: state.selected_queen,
-    random_queen: randomiseQueen(state.queens)
+    challenger: setChallenger(state.queens, state.selected_queen),
+    competitor: randomiseQueen(state.challenge.competitors, state.queens),
+    challenge: state.challenge
   };
 };
 

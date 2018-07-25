@@ -15,7 +15,7 @@ let SelectQueen = ({ team, selectQueen, history }) => (
 
 const mapStateToProps = state => {
   return {
-    team: state.queens
+    team: state.team
   };
 };
 

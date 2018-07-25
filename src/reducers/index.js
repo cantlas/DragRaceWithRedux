@@ -1,8 +1,13 @@
 import queens from "./complete_queens_list";
+import challenges from "./challenges";
 
 const initialState = {
   queens: queens,
-  selected_queen: null
+  selected_queen: null,
+  team: [],
+  challenges: challenges,
+  current_challenge: null,
+  competitor: null
 };
 
 const dragRace = (state = initialState, action) => {
@@ -10,6 +15,14 @@ const dragRace = (state = initialState, action) => {
     case "SELECT_QUEEN":
       return Object.assign({}, state, {
         selected_queen: action.id
+      });
+    case "UPDATE_TEAM":
+      return Object.assign({}, state, {
+        team: action.team
+      });
+    case "UPDATE_CHALLENGE":
+      return Object.assign({}, state, {
+        challenge: action.challenge
       });
     default:
       return state;

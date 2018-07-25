@@ -1,7 +1,16 @@
 const queens = [
   {
     name: "Alaska",
-    price: 250
+    price: 250,
+    CUNT: 10,
+    dance: 7,
+    sing: 9,
+    comedy: 10,
+    act: 10,
+    runway: 10,
+    sew: 8,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Trixie Mattel",
