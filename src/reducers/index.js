@@ -6,7 +6,7 @@ const initialState = {
   selected_queen: null,
   team: [],
   challenges: challenges,
-  current_challenge: null,
+  challenge: null,
   competitor: null
 };
 

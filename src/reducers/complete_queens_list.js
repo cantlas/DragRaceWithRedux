@@ -114,7 +114,16 @@ const queens = [
   },
   {
     name: "Naomi Smalls",
-    price: 115
+    price: 115,
+    CUNT: 8,
+    dance: 8,
+    sing: 7,
+    comedy: 5,
+    act: 6,
+    runway: 9,
+    sew: 7,
+    lipsync: 7,
+    paint: 9
   },
   {
     name: "Thorgy Thor",
@@ -170,7 +179,16 @@ const queens = [
   },
   {
     name: "Coco Montrese",
-    price: 95
+    price: 95,
+    CUNT: 10,
+    dance: 9,
+    sing: 2,
+    comedy: 6,
+    act: 6,
+    runway: 7,
+    sew: 7,
+    lipsync: 10,
+    paint: 4
   },
   {
     name: "Ongina",
@@ -418,7 +436,16 @@ const queens = [
   },
   {
     name: "Jade Jolie",
-    price: 25
+    price: 25,
+    CUNT: 3,
+    dance: 6,
+    sing: 1,
+    comedy: 2,
+    act: 4,
+    runway: 2,
+    sew: 4,
+    lipsync: 4,
+    paint: 5
   },
   {
     name: "Tempest Dujour",
