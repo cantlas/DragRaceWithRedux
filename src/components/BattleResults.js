@@ -5,7 +5,8 @@ class BattleResults extends React.Component {
     super();
     this.state = {
       winner: { name: "Winner" },
-      loser: { name: "Loser" }
+      loser: { name: "Loser" },
+      resultsVisible: false
     };
     this.calculateWinner = this.calculateWinner.bind(this);
   }
@@ -47,15 +48,26 @@ class BattleResults extends React.Component {
     }
     this.setState({
       winner,
-      loser
+      loser,
+      resultsVisible: true
     });
   }
   render() {
     return (
       <div>
-        <h1>{this.state.winner.name} shante you stay.</h1>
-        <h1>{this.state.loser.name} sashay away.</h1>
         <button onClick={this.calculateWinner}>Who wins?</button>
+        {this.state.resultsVisible ? (
+          <div>
+            <h1 style={{ color: "#FF62B0" }}>
+              {this.state.winner.name} shanté you stay.
+            </h1>
+            <h3 style={{ color: "grey" }}>
+              {this.state.loser.name} sashay away.
+            </h3>
+          </div>
+        ) : (
+          <h3>Now THAT is what you call a lipsync for your life.</h3>
+        )}
       </div>
     );
   }

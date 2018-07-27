@@ -4,11 +4,30 @@ import { selectQueen } from "../actions";
 import Queen from "./Queen";
 
 let SelectQueen = ({ team, selectQueen, history }) => (
-  <div>
-    <ul>
-      {team.map(queen => (
-        <li onClick={() => selectQueen(queen.name, history)}>{queen.name}</li>
-      ))}
+  <div style={{ textAlign: "center" }}>
+    <ul style={{ padding: 0 }}>
+      {team.map(queen => {
+        let color = "#D19C67";
+        if (queen.price > 50) color = "#FFB428";
+        if (queen.price > 100) color = "#06DCFB";
+        if (queen.price > 200) color = "#01F33E";
+        return (
+          <li
+            style={{
+              display: "inline-block",
+              borderRadius: "5px",
+              background: color,
+              color: "white",
+              margin: "10px 10px 10px 10px",
+              padding: "5px 10px 5px 10px",
+              cursor: "pointer"
+            }}
+            onClick={() => selectQueen(queen.name, history)}
+          >
+            {queen.name}
+          </li>
+        );
+      })}
     </ul>
   </div>
 );

@@ -11,7 +11,7 @@ import CategoryIs from "./CategoryIs";
 const Root = ({ store }) => (
   <Provider store={store}>
     <Router>
-      <div>
+      <div class="App">
         <Route exact path="/" component={Home} />
         <Route path="/BuildYourTeam" component={BuildYourTeam} />
         <Route path="/SelectQueen" component={SelectQueen} />

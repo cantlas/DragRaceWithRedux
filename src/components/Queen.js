@@ -3,12 +3,16 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 let Queen = ({ selected_queen }) => (
-  <div>
+  <div style={{ paddingTop: "20px" }}>
     You have selected:<br />
-    <h1>{selected_queen}</h1>
+    <h1 style={{ color: "#FF62B0" }}>{selected_queen}</h1>
+    <h3 style={{ color: "grey" }}>
+      <i>Goodluck... and DON'T FUCK IT UP!</i>
+    </h3>
     <br />
-    GOODLUCK... and DON'T FUCK IT UP!
-    <Link to="/Battle">START</Link>
+    <Link style={{ textDecoration: "none", color: "black" }} to="/Battle">
+      <strong>START</strong>
+    </Link>
   </div>
 );
 

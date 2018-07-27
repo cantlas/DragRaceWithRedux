@@ -14,103 +14,327 @@ const queens = [
   },
   {
     name: "Trixie Mattel",
-    price: 225
+    price: 225,
+    CUNT: 10,
+    dance: 5,
+    sing: 10,
+    comedy: 8,
+    act: 7,
+    runway: 8,
+    sew: 7,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Jinkx Monsoon",
-    price: 220
+    price: 220,
+    CUNT: 10,
+    dance: 9,
+    sing: 9,
+    comedy: 10,
+    act: 10,
+    runway: 7,
+    sew: 8,
+    lipsync: 9,
+    paint: 6
   },
   {
     name: "Raja",
-    price: 220
+    price: 220,
+    CUNT: 10,
+    dance: 8,
+    sing: 8,
+    comedy: 8,
+    act: 8,
+    runway: 10,
+    sew: 8,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Shangela",
-    price: 220
+    price: 220,
+    CUNT: 10,
+    dance: 8,
+    sing: 7,
+    comedy: 8,
+    act: 7,
+    runway: 8,
+    sew: 3,
+    lipsync: 9,
+    paint: 8
   },
   {
     name: "Detox",
-    price: 215
+    price: 215,
+    CUNT: 10,
+    dance: 9,
+    sing: 10,
+    comedy: 10,
+    act: 10,
+    runway: 10,
+    sew: 7,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Katya",
-    price: 215
+    CUNT: 10,
+    dance: 10,
+    sing: 9,
+    comedy: 8,
+    act: 8,
+    runway: 9,
+    sew: 8,
+    lipsync: 9,
+    paint: 8
   },
   {
     name: "Alyssa Edwards",
-    price: 210
+    price: 210,
+    CUNT: 10,
+    dance: 10,
+    sing: 3,
+    comedy: 9,
+    act: 8,
+    runway: 7,
+    sew: 5,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Bianca Del Rio",
-    price: 200
+    price: 200,
+    CUNT: 10,
+    dance: 6,
+    sing: 9,
+    comedy: 10,
+    act: 10,
+    runway: 8,
+    sew: 9,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Sharon Needles",
-    price: 190
+    price: 190,
+    CUNT: 10,
+    dance: 7,
+    sing: 8,
+    comedy: 8,
+    act: 8,
+    runway: 9,
+    sew: 7,
+    lipsync: 8,
+    paint: 8
   },
   {
     name: "Raven",
-    price: 190
+    price: 190,
+    CUNT: 10,
+    dance: 7,
+    sing: 8,
+    comedy: 6,
+    act: 6,
+    runway: 9,
+    sew: 7,
+    lipsync: 8,
+    paint: 10
   },
   {
     name: "Bob the Drag Queen",
-    price: 175
+    price: 175,
+    CUNT: 10,
+    dance: 8,
+    sing: 7,
+    comedy: 10,
+    act: 10,
+    runway: 8,
+    sew: 7,
+    lipsync: 9,
+    paint: 6
   },
   {
     name: "Aquaria",
-    price: 175
+    price: 175,
+    CUNT: 10,
+    dance: 10,
+    sing: 5,
+    comedy: 8,
+    act: 8,
+    runway: 10,
+    sew: 9,
+    lipsync: 10,
+    paint: 10
   },
   {
     name: "BenDeLaCreme",
-    price: 160
+    price: 160,
+    CUNT: 9,
+    dance: 8,
+    sing: 8,
+    comedy: 10,
+    act: 10,
+    runway: 7,
+    sew: 9,
+    lipsync: 9,
+    paint: 7
   },
   {
     name: "Latrice Royale",
-    price: 150
+    price: 150,
+    CUNT: 9,
+    dance: 6,
+    sing: 8,
+    comedy: 7,
+    act: 7,
+    runway: 6,
+    sew: 7,
+    lipsync: 9,
+    paint: 5
   },
   {
     name: "Chad Michaels",
-    price: 150
+    price: 150,
+    CUNT: 9,
+    dance: 9,
+    sing: 9,
+    comedy: 7,
+    act: 8,
+    runway: 8,
+    sew: 7,
+    lipsync: 8,
+    paint: 7
   },
   {
     name: "Trinity Taylor",
-    price: 150
+    price: 150,
+    CUNT: 8,
+    dance: 9,
+    sing: 7,
+    comedy: 8,
+    act: 8,
+    runway: 9,
+    sew: 7,
+    lipsync: 9,
+    paint: 7
   },
   {
     name: "Adore Delano",
-    price: 145
+    price: 145,
+    CUNT: 8,
+    dance: 6,
+    sing: 8,
+    comedy: 7,
+    act: 7,
+    runway: 6,
+    sew: 4,
+    lipsync: 9,
+    paint: 7
   },
   {
     name: "Sasha Velour",
-    price: 140
+    price: 140,
+    CUNT: 8,
+    dance: 7,
+    sing: 7,
+    comedy: 7,
+    act: 7,
+    runway: 9,
+    sew: 8,
+    lipsync: 9,
+    paint: 8
   },
   {
     name: "Willam",
-    price: 135
+    price: 135,
+    CUNT: 10,
+    dance: 9,
+    sing: 9,
+    comedy: 9,
+    act: 8,
+    runway: 6,
+    sew: 6,
+    lipsync: 5,
+    paint: 6
   },
   {
     name: "Violet Chachki",
-    price: 135
+    price: 135,
+    CUNT: 8,
+    dance: 8,
+    sing: 7,
+    comedy: 6,
+    act: 6,
+    runway: 10,
+    sew: 8,
+    lipsync: 6,
+    paint: 9
   },
   {
     name: "Shea Coulee",
-    price: 130
+    price: 130,
+    CUNT: 9,
+    dance: 9,
+    sing: 7,
+    comedy: 7,
+    act: 7,
+    runway: 8,
+    sew: 8,
+    lipsync: 9,
+    paint: 7
   },
   {
     name: "Manila Luzon",
-    price: 125
+    price: 125,
+    CUNT: 10,
+    dance: 8,
+    sing: 7,
+    comedy: 9,
+    act: 8,
+    runway: 9,
+    sew: 8,
+    lipsync: 8,
+    paint: 8
   },
   {
     name: "Roxxy Andrews",
-    price: 125
+    price: 125,
+    CUNT: 9,
+    dance: 7,
+    sing: 5,
+    comedy: 7,
+    act: 7,
+    runway: 10,
+    sew: 9,
+    lipsync: 8,
+    paint: 7
   },
   {
     name: "Nina Flowers",
-    price: 120
+    price: 120,
+    CUNT: 7,
+    dance: 7,
+    sing: 7,
+    comedy: 7,
+    act: 7,
+    runway: 7,
+    sew: 7,
+    lipsync: 7,
+    paint: 7
   },
   {
     name: "Ginger Minj",
-    price: 120
+    price: 120,
+    CUNT: 7,
+    dance: 5,
+    sing: 8,
+    comedy: 10,
+    act: 10,
+    runway: 6,
+    sew: 6,
+    lipsync: 8,
+    paint: 6
   },
   {
     name: "Naomi Smalls",
@@ -127,43 +351,133 @@ const queens = [
   },
   {
     name: "Thorgy Thor",
-    price: 115
+    price: 115,
+    CUNT: 7,
+    dance: 7,
+    sing: 7,
+    comedy: 9,
+    act: 9,
+    runway: 7,
+    sew: 6,
+    lipsync: 7,
+    paint: 6
   },
   {
     name: "Pearl",
-    price: 110
+    price: 110,
+    CUNT: 7,
+    dance: 6,
+    sing: 6,
+    comedy: 6,
+    act: 7,
+    runway: 9,
+    sew: 6,
+    lipsync: 8,
+    paint: 10
   },
   {
     name: "Kennedy Davenport",
-    price: 110
+    price: 110,
+    CUNT: 7,
+    dance: 10,
+    sing: 8,
+    comedy: 9,
+    act: 8,
+    runway: 6,
+    sew: 6,
+    lipsync: 10,
+    paint: 6
   },
   {
     name: "Courtney Act",
-    price: 105
+    price: 105,
+    CUNT: 7,
+    dance: 7,
+    sing: 7,
+    comedy: 5,
+    act: 5,
+    runway: 8,
+    sew: 7,
+    lipsync: 6,
+    paint: 8
   },
   {
     name: "Eureka",
-    price: 105
+    price: 105,
+    CUNT: 7,
+    dance: 6,
+    sing: 6,
+    comedy: 8,
+    act: 8,
+    runway: 7,
+    sew: 6,
+    lipsync: 9,
+    paint: 8
   },
   {
     name: "Laganja Estranja",
-    price: 105
+    price: 105,
+    CUNT: 6,
+    dance: 9,
+    sing: 6,
+    comedy: 6,
+    act: 5,
+    runway: 6,
+    sew: 5,
+    lipsync: 8,
+    paint: 7
   },
   {
     name: "Valentina",
-    price: 105
+    price: 105,
+    CUNT: 6,
+    dance: 5,
+    sing: 9,
+    comedy: 5,
+    act: 6,
+    runway: 10,
+    sew: 5,
+    lipsync: 3,
+    paint: 9
   },
   {
     name: "Bebe Zahara Benet",
-    price: 100
+    price: 100,
+    CUNT: 6,
+    dance: 6,
+    sing: 7,
+    comedy: 4,
+    act: 5,
+    runway: 8,
+    sew: 6,
+    lipsync: 7,
+    paint: 6
   },
   {
     name: "Chi Chi DeVayne",
-    price: 100
+    price: 100,
+    CUNT: 7,
+    dance: 9,
+    sing: 6,
+    comedy: 7,
+    act: 7,
+    runway: 10,
+    sew: 4,
+    lipsync: 10,
+    paint: 8
   },
   {
     name: "Kim Chi",
-    price: 100
+    price: 100,
+    CUNT: 6,
+    dance: 4,
+    sing: 3,
+    comedy: 7,
+    act: 6,
+    runway: 9,
+    sew: 7,
+    lipsync: 4,
+    paint: 7
   },
   {
     name: "Darienne Lake",

@@ -55,7 +55,9 @@ class BuildYourTeam extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={{ color: "hotpink" }}>RuPaul's Drag Race Fantasy Draft</h1>
+        <h1 style={{ color: "#FF62B0" }}>
+          <i>Who's on your team?</i>
+        </h1>
         <select onChange={this.addQueen}>
           {this.state.queens.map(queen => (
             <option value={queen.name}>
@@ -64,27 +66,55 @@ class BuildYourTeam extends React.Component {
           ))}
         </select>
         <br />
-        <h1>
+        <h2 style={{ color: "grey" }}>
           Funds spent: <span>${this.state.cost},000</span>
-        </h1>
+        </h2>
         {this.state.cost > 1000 ? (
-          <h2 style={{ color: "red" }}>
+          <h3 style={{ color: "#FF4848" }}>
             Salary cap exceeded by ${this.state.cost - 1000},000
-          </h2>
+          </h3>
         ) : (
-          <h2 style={{ color: "green" }}>
+          <h3 style={{ color: "#27DE55" }}>
             ${1000 - this.state.cost},000 remaining.
-          </h2>
+          </h3>
         )}
-        {this.state.team.map(queen => (
-          <div>
-            {queen.name}{" "}
-            <button value={queen.name} onClick={this.removeQueen}>
-              Remove
-            </button>
-          </div>
-        ))}
-        <h3 style={{ color: "orange" }}>
+        <ul style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+          {this.state.team.map(queen => {
+            let color = "#D19C67";
+            if (queen.price > 50) color = "#FFB428";
+            if (queen.price > 100) color = "#06DCFB";
+            if (queen.price > 200) color = "#01F33E";
+            return (
+              <div style={{ display: "inline-block" }}>
+                <li
+                  style={{
+                    borderRadius: "5px",
+                    display: "inline-block",
+                    background: color,
+                    color: "white",
+                    margin: "0 5px 10px 10px",
+                    padding: "5px 10px 5px 10px"
+                  }}
+                >
+                  {queen.name}
+                </li>
+                <button
+                  style={{
+                    background: "lightgrey",
+                    color: "white",
+                    borderRadius: "100px",
+                    cursor: "pointer"
+                  }}
+                  value={queen.name}
+                  onClick={this.removeQueen}
+                >
+                  X
+                </button>
+              </div>
+            );
+          })}
+        </ul>
+        <h3 style={{ color: "#FF62B0" }}>
           {this.state.team.length > 13
             ? "You can only draft 12 Queens"
             : 12 - this.state.team.length + " " + "Queens left to draft"}

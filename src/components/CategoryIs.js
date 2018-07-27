@@ -11,7 +11,7 @@ class CategoryIs extends React.Component {
   render() {
     return (
       <div>
-        <h1>CATEGORY IS...</h1>
+        <h2>CATEGORY IS...</h2>
         <Challenge {...this.props.challenge} />
         <SelectQueen history={this.props.history} />
       </div>

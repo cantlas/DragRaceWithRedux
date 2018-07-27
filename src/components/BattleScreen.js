@@ -25,7 +25,10 @@ class BattleScreen extends React.Component {
     return (
       <div>
         <h1>
-          {this.props.challenger.name} <i>versus</i>{" "}
+          {this.props.challenger.name}
+          <br />
+          <span style={{ color: "grey", fontSize: "14px" }}>V</span>
+          <br />
           {this.props.competitor.name}
         </h1>
         <BattleResults
