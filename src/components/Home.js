@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ActiveBattles from "./ActiveBattles";
 
 const Home = () => (
   <div>
@@ -13,6 +14,7 @@ const Home = () => (
     >
       <strong>PLAY</strong>
     </Link>
+    <ActiveBattles />
   </div>
 );
 
