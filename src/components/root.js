@@ -7,6 +7,7 @@ import Queen from "./Queen";
 import BattleScreen from "./BattleScreen";
 import BuildYourTeam from "./BuildYourTeam";
 import CategoryIs from "./CategoryIs";
+import Battle from "./Battle";
 
 const Root = ({ store }) => (
   <Provider store={store}>
@@ -16,8 +17,9 @@ const Root = ({ store }) => (
         <Route path="/BuildYourTeam" component={BuildYourTeam} />
         <Route path="/SelectQueen" component={SelectQueen} />
         <Route path="/Queen" component={Queen} />
-        <Route path="/Battle" component={BattleScreen} />
+        <Route path="/BattleScreen" component={BattleScreen} />
         <Route path="/CategoryIs" component={CategoryIs} />
+        <Route path="/Battle" component={Battle} />
       </div>
     </Router>
   </Provider>

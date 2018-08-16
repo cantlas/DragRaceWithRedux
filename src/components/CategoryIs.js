@@ -3,6 +3,7 @@ import SelectQueen from "./SelectQueen";
 import Challenge from "./Challenge";
 import { connect } from "react-redux";
 import { updateChallenge } from "../actions";
+import { Link } from "react-router-dom";
 
 class CategoryIs extends React.Component {
   componentDidMount() {
@@ -14,6 +15,7 @@ class CategoryIs extends React.Component {
         <h2>CATEGORY IS...</h2>
         <Challenge {...this.props.challenge} />
         <SelectQueen history={this.props.history} />
+        <Link to="/Battle">Battle</Link>
       </div>
     );
   }

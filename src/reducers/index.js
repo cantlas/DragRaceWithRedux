@@ -2,6 +2,7 @@ import queens from "./complete_queens_list";
 import challenges from "./challenges";
 
 const initialState = {
+  user: "Adam",
   battles: [{ name: "adam" }],
   queens: queens,
   selected_queen: null,
